@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class NavigationExample extends StatefulWidget {
-  const NavigationExample({super.key});
+class NavigationBottomComponent extends StatefulWidget {
+  const NavigationBottomComponent({super.key});
 
   @override
-  State<NavigationExample> createState() => _NavigationExampleState();
+  State<NavigationBottomComponent> createState() =>
+      _NavigationBottomComponentState();
 }
 
-class _NavigationExampleState extends State<NavigationExample> {
+class _NavigationBottomComponentState extends State<NavigationBottomComponent> {
   int currentPageIndex = 0;
 
   @override

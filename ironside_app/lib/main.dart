@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: AppRouter.getRoutes(),
       initialRoute: AppRouter.getDefaultRoute(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
