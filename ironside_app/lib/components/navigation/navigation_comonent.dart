@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ironside_app/components/alerts/alert_component.dart';
+import 'package:ironside_app/components/examples/examples_component.dart';
+import 'package:ironside_app/components/http/http_component.dart';
 
 class NavigationBottomComponent extends StatefulWidget {
   const NavigationBottomComponent({super.key});
@@ -40,21 +43,9 @@ class _NavigationBottomComponentState extends State<NavigationBottomComponent> {
         ],
       ),
       body: <Widget>[
-        Container(
-          color: Colors.red,
-          alignment: Alignment.center,
-          child: const Text('Page 1'),
-        ),
-        Container(
-          color: Colors.green,
-          alignment: Alignment.center,
-          child: const Text('Page 2'),
-        ),
-        Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
-        ),
+        const ExamplesComponent(),
+        const HttpComponent(),
+        const AlertComponent(),
       ][currentPageIndex],
     );
   }
