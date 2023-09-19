@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CardComponent extends StatelessWidget {
-  const CardComponent({super.key});
+  const CardComponent(this.width, {super.key});
+  final double width;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.4,
+      width: MediaQuery.of(context).size.width * width,
       child: Card(
         child: Column(
           mainAxisSize: MainAxisSize.min,
